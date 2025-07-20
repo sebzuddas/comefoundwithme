@@ -70,8 +70,25 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Background"
     title="Background"
+    subtitle=`Underneath many autonomous systems are <a
+        href="https://www.youtube.com/watch?v=lBC1nEq0_nk"
+        target="_blank"
+        class="text-blue-600 hover:text-blue-800 underline">control systems</a
+      >. What may seem to many as 'AI' are actually control systems. Your body maintaining a temperature of 37 degrees
+      Celsius is a <a
+        href="https://med.libretexts.org/Bookshelves/Anatomy_and_Physiology/Human_Anatomy_and_Physiology_Preparatory_Course_(Liachovitzky)/01%3A_Levels_of_Organization_of_the_Human_Organism/1.03%3A_Homeostasis_and_Control_Systems"
+        target="_blank"
+        class="text-blue-600 hover:text-blue-800 underline">control system</a
+      >. SpaceX lands its rockets using control engineering, solving <a
+        href="https://www.youtube.com/watch?v=Kk5J-wOYOFM"
+        target="_blank"
+        class="text-blue-600 hover:text-blue-800 underline">optimal control</a
+      > problems throughout the landing process via <a
+        href="https://en.wikipedia.org/wiki/Model_Predictive_Control"
+        target="_blank"
+        class="text-blue-600 hover:text-blue-800 underline">model predictive control</a
+      >.`
     items={[
       {
         title: 'Systems Thinking and Engineering',
@@ -143,8 +160,15 @@ const metadata = {
   <!-- Content Widget **************** -->
 
   <Content
+    title="Projects & Ideas"
+    subtitle="I have worked on a variety of projects, here are some recent ones which I believe have business potential"
     isAfterContent
     items={[
+      {
+        title: 'Smart shipping containers',
+        description:
+          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+      },
       {
         title: 'Supply chain resilience through distributed manufacturing',
         description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
@@ -154,11 +178,7 @@ const metadata = {
         description:
           'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
       },
-      {
-        title: 'Smart shipping containers',
-        description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
-      },
+      
       {
         title: 'Offgrid energy system matchmaking',
         description:
@@ -170,10 +190,6 @@ const metadata = {
       alt: 'Blueprint Image',
     }}
   >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Ongoing Projects</h3>
-    </Fragment>
-
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
@@ -184,6 +200,8 @@ const metadata = {
   <Content
     isReversed
     isAfterContent
+    title="What I'm looking for in a co-founder"
+    subtitle="I'm looking for a co-founder to help me build a company"
     items={[
       {
         title: 'Enhanced user engagement',
@@ -210,12 +228,6 @@ const metadata = {
       alt: 'Astronauts Image',
     }}
   >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        What I'm looking for in a co-founder
-      </h3>
-    </Fragment>
-
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
@@ -226,7 +238,6 @@ const metadata = {
   <FAQs
     title="Frequently Asked Questions"
     subtitle="Common questions people ask me"
-    tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {

@@ -8,6 +8,7 @@ import Button from '~/components/ui/Button.astro';
 import { getHomePermalink } from '~/utils/permalinks';
 import { trimSlash, getAsset } from '~/utils/permalinks';
 import type { CallToAction } from '~/types';
+import { socialLinks } from '~/navigation';
 
 interface Link {
   text?: string;
@@ -74,7 +75,20 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
       <a class="flex items-center" href={getHomePermalink()}>
         <Logo />
       </a>
-      <div class="flex items-center md:hidden">
+      <div class="flex items-center space-x-4 md:hidden">
+        <div class="flex items-center space-x-2">
+          {socialLinks.map(({ ariaLabel, icon, href }) => (
+            <a
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={ariaLabel}
+              class="text-muted hover:text-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg p-2 transition-colors duration-150"
+            >
+              <Icon name={icon} class="w-5 h-5" />
+            </a>
+          ))}
+        </div>
         <ToggleMenu />
       </div>
     </div>
@@ -150,17 +164,41 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
             )
           }
         </div>
-        {
-          actions?.length ? (
-            <span class="ml-4 rtl:ml-0 rtl:mr-4">
-              {actions.map((btnProps) => (
-                <Button {...btnProps} class="ml-2 py-2.5 px-5.5 md:px-6 font-semibold shadow-none text-sm w-auto" />
-              ))}
-            </span>
-          ) : (
-            ''
-          )
-        }
+        <div class="hidden md:flex items-center space-x-4">
+          <div class="flex items-center space-x-2">
+            {socialLinks.map(({ ariaLabel, icon, href }) => (
+              <a
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={ariaLabel}
+                class="text-muted hover:text-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg p-2 transition-colors duration-150"
+              >
+                <Icon name={icon} class="w-5 h-5" />
+              </a>
+            ))}
+          </div>
+          {showToggleTheme && <ToggleTheme />}
+          {showRssFeed && (
+            <a
+              class="text-muted hover:text-primary dark:text-gray-300 dark:hover:text-primary-light"
+              href="#"
+              title="RSS"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="sr-only">RSS</span>
+              <Icon name="tabler:rss" class="h-5 w-5" aria-hidden="true" />
+            </a>
+          )}
+          {actions.map(({ text, href, target = '_blank', icon, iconPosition = 'left' }) => (
+            <Button href={href} variant="primary" target={target} class="text-sm">
+              {iconPosition === 'left' && icon && <Icon name={icon} class="w-4 h-4 mr-1" />}
+              {text}
+              {iconPosition === 'right' && icon && <Icon name={icon} class="w-4 h-4 ml-1" />}
+            </Button>
+          ))}
+        </div>
       </div>
     </div>
   </div>
