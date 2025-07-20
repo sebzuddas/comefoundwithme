@@ -193,9 +193,8 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
           )}
           {actions.map(({ text, href, target = '_blank', icon, iconPosition = 'left' }) => (
             <Button href={href} variant="primary" target={target} class="text-sm">
-              {iconPosition === 'left' && icon && <Icon name={icon} class="w-4 h-4 mr-1" />}
+              {icon && <Icon name={icon} class={`w-4 h-4 ${iconPosition === 'right' ? 'ml-1 order-2' : 'mr-1'}`} />}
               {text}
-              {iconPosition === 'right' && icon && <Icon name={icon} class="w-4 h-4 ml-1" />}
             </Button>
           ))}
         </div>

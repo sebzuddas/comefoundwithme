@@ -4,7 +4,7 @@ import Header from '~/components/widgets/Header.astro';
 import Footer from '~/components/widgets/Footer.astro';
 // Announcement component removed
 
-import { headerData, footerData } from '~/navigation';
+import { headerData } from '~/navigation';
 
 import type { MetaData } from '~/types';
 
@@ -27,6 +27,6 @@ const { metadata } = Astro.props;
     <slot />
   </main>
   <slot name="footer">
-    <Footer {...footerData} />
+    <Footer links={[]} footNote="" theme="light" />
   </slot>
 </Layout>
