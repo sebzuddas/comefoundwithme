@@ -22,8 +22,12 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
   hasExternalScripts ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
 
 export default defineConfig({
-  site: 'https://sebzuddas.github.io/comefoundwithme',
+  site: 'https://sebzuddas.github.io',
+  base: '/comefoundwithme',
   output: 'static',
+  build: {
+    assets: '_astro'
+  },
 
   integrations: [
     tailwind({
