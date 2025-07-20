@@ -20,10 +20,11 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    image={{ src: '~/assets/images/hero-image.jpeg', 
-    alt: 'AstroWind Hero Image',
-    class: 'object-cover object-top',
-    style: 'height: 600px;',
+    image={{
+      src: '~/assets/images/hero-image.jpeg',
+      alt: 'AstroWind Hero Image',
+      class: 'object-cover object-top',
+      style: 'height: 600px;',
     }}
   >
     <Fragment slot="title">Come Found With Me</Fragment>
@@ -35,36 +36,35 @@ const metadata = {
     </Fragment>
   </Hero>
 
+  <!-- Steps Widget ****************** -->
 
- <!-- Steps Widget ****************** -->
-
- <Steps
- title="Edges"
- items={[
-   {
-     title: 'Catalyst',
-     description:
-       "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-     icon: 'tabler:package',
-   },
-   {
-     title: 'Tech',
-     description:
-       "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-     icon: 'tabler:letter-case',
-   },
-   {
-     title: 'Commercial',
-     description:
-       'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-     icon: 'tabler:paint',
-   }
- ]}
- image={{
-   src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-   alt: 'Steps image',
- }}
-/>
+  <Steps
+    title="Edges"
+    items={[
+      {
+        title: 'Catalyst',
+        description:
+          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
+        icon: 'tabler:package',
+      },
+      {
+        title: 'Tech',
+        description:
+          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
+        icon: 'tabler:letter-case',
+      },
+      {
+        title: 'Commercial',
+        description:
+          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
+        icon: 'tabler:paint',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'Steps image',
+    }}
+  />
 
   <!-- Content Widget **************** -->
 
@@ -98,22 +98,36 @@ const metadata = {
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
       alt: 'Colorful Image',
       classes: {
-        container: 'md:flex md:items-left'
-      }
+        container: 'md:flex md:items-left',
+      },
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Systems and Control</h3>
-      Underneath many autonomous systems are <a href="https://www.youtube.com/watch?v=lBC1nEq0_nk" target="_blank" class="text-blue-600 hover:text-blue-800 underline">control systems</a>. What may seem to many as 'AI' are actually control systems. 
-      Your body maintaining a temperature of 37 degrees Celsius is a <a href="https://med.libretexts.org/Bookshelves/Anatomy_and_Physiology/Human_Anatomy_and_Physiology_Preparatory_Course_(Liachovitzky)/01%3A_Levels_of_Organization_of_the_Human_Organism/1.03%3A_Homeostasis_and_Control_Systems" target="_blank" class="text-blue-600 hover:text-blue-800 underline">control system</a>. 
-      SpaceX lands its rockets using control engineering, solving <a href="https://www.youtube.com/watch?v=Kk5J-wOYOFM" target="_blank" class="text-blue-600 hover:text-blue-800 underline">optimal control</a> problems throughout the landing process via <a href="https://en.wikipedia.org/wiki/Model_Predictive_Control" target="_blank" class="text-blue-600 hover:text-blue-800 underline">model predictive control</a>. 
+      Underneath many autonomous systems are <a
+        href="https://www.youtube.com/watch?v=lBC1nEq0_nk"
+        target="_blank"
+        class="text-blue-600 hover:text-blue-800 underline">control systems</a
+      >. What may seem to many as 'AI' are actually control systems. Your body maintaining a temperature of 37 degrees
+      Celsius is a <a
+        href="https://med.libretexts.org/Bookshelves/Anatomy_and_Physiology/Human_Anatomy_and_Physiology_Preparatory_Course_(Liachovitzky)/01%3A_Levels_of_Organization_of_the_Human_Organism/1.03%3A_Homeostasis_and_Control_Systems"
+        target="_blank"
+        class="text-blue-600 hover:text-blue-800 underline">control system</a
+      >. SpaceX lands its rockets using control engineering, solving <a
+        href="https://www.youtube.com/watch?v=Kk5J-wOYOFM"
+        target="_blank"
+        class="text-blue-600 hover:text-blue-800 underline">optimal control</a
+      > problems throughout the landing process via <a
+        href="https://en.wikipedia.org/wiki/Model_Predictive_Control"
+        target="_blank"
+        class="text-blue-600 hover:text-blue-800 underline">model predictive control</a
+      >.
     </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
 
   <Stats
     title="Discover the impressive impact of Astrowind"
@@ -125,7 +139,6 @@ const metadata = {
       { title: 'Satisfied Clients', amount: '116K' },
     ]}
   />
-
 
   <!-- Content Widget **************** -->
 
@@ -197,18 +210,18 @@ const metadata = {
       alt: 'Astronauts Image',
     }}
   >
-  <Fragment slot="content">
-    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">What I'm looking for in a co-founder</h3>
-  </Fragment>
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        What I'm looking for in a co-founder
+      </h3>
+    </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
-
   <!-- HighlightedPosts Widget ******* -->
-
 
   <FAQs
     title="Frequently Asked Questions"
@@ -223,18 +236,15 @@ const metadata = {
       },
       {
         title: 'Where are you from, really?',
-        description:
-          `I was born in Northern Italy, near <a href="https://maps.app.goo.gl/D1pudcwur1RerLcy8" target="_blank" class="text-blue-600 hover:text-blue-800 underline">Lake Maggiore</a> and lived there until I was 7, when I moved to the UK with my mum. My mum is English and my dad is Italian, so I have two mother tongues (English and Italian). But even though I was born in the North of Italy, my heritage is Sardinian (Zuddas is a Sardinian surname) and I would go to Sardinia every summer.`
+        description: `I was born in Northern Italy, near <a href="https://maps.app.goo.gl/D1pudcwur1RerLcy8" target="_blank" class="text-blue-600 hover:text-blue-800 underline">Lake Maggiore</a> and lived there until I was 7, when I moved to the UK with my mum. My mum is English and my dad is Italian, so I have two mother tongues (English and Italian). But even though I was born in the North of Italy, my heritage is Sardinian (Zuddas is a Sardinian surname) and I would go to Sardinia every summer.`,
       },
       {
         title: 'Why Entrepreneurship?',
-        description:
-          "When I was 18, I had dropped out of college twice",
+        description: 'When I was 18, I had dropped out of college twice',
       },
       {
-        title: "What do you do in your spare time?",
-        description:
-          "I like to go to the gym, play video games, and watch movies.",
+        title: 'What do you do in your spare time?',
+        description: 'I like to go to the gym, play video games, and watch movies.',
       },
       {
         title: 'What is something that you would like to try again?',
