@@ -26,7 +26,7 @@ export default defineConfig({
   base: '/comefoundwithme',
   output: 'static',
   build: {
-    assets: '_astro'
+    assets: '_astro',
   },
 
   integrations: [
