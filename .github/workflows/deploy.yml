@@ -1,4 +1,4 @@
-name: Build and Deploy to GitHub Pages
+name: Build and Deploy to Jekyll Site
 
 on:
   push:
@@ -12,7 +12,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Astro site
         uses: actions/checkout@v4
         
       - name: Setup Node.js
@@ -30,13 +30,15 @@ jobs:
       - name: Run checks
         run: npm run check
         
-      - name: Build site
+      - name: Build Astro site
         run: npm run build
         
-      - name: Deploy to GitHub Pages
+      - name: Deploy to Jekyll repository
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          external_repository: sebzuddas/sebzuddas.github.io
           publish_dir: ./dist
-          cname: sebzuddas.com
+          destination_dir: comefoundwithme
+          keep_files: true
