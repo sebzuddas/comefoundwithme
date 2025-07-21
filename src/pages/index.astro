@@ -44,19 +44,19 @@ const metadata = {
       {
         title: 'Catalyst',
         description:
-          "I have a strong catalyst edge. I have been exposed to multiple industries including defence, energy and manufacturing. My engineering experience in systems and controls has given me a unique perspective on how to solve complex cross-domain problems.",
+          "I have a strong catalyst edge. I have been exposed to multiple industries including defence, energy and manufacturing. My engineering experience in systems and controls has given me a unique perspective on how to solve complex cross-domain problems. Similarly, integrating and applying multiple technologies to solve complex problems is something I am passionate about.",
         icon: 'tabler:package',
       },
       {
         title: 'Tech',
         description:
-          "I have a technical edge. Having studied and practiced implemeting control systems and building software to simulate complex systems, I am confident in the potential of these approaches.",
+          "I have a technical edge. Having studied and practiced implemeting control systems, building software to simulate complex systems and leading complex technical projects. I have less experience with web development, but I am learning. I am interested in modern AI approaches and can see the potential but my edge lies more in systems & control domain.",
         icon: 'tabler:letter-case',
       },
       {
         title: 'Commercial',
         description:
-          "I have less of a commercial edge. I have some commercial understanding of energy systems and have interacted with international clients, but I do not have deep commercial knowledge in any one market.",
+          "I have less of a commercial edge. I have some commercial understanding of energy systems and have interacted with international clients, but I do not have deep commercial knowledge in any one market. I am currently investigating technologies in supply chain and logistics to improve the resilience of supply chains.",
         icon: 'tabler:paint',
       },
     ]}
@@ -71,7 +71,22 @@ const metadata = {
   <Content
     isReversed
     title="Background"
-    subtitle=`The brains of many autonomous systems are <a
+    subtitle=``
+    items={[
+      {
+        title: 'Systems Engineering',
+        description:
+          `<a href="https://sebokwiki.org/wiki/Systems_Engineering_(glossary)" target="_blank" class="text-blue-600 hover:text-blue-800 underline">Systems engineering</a> is an interdisciplinary field that, similar to a technical product manager, but more focussed on integrating multiple components of a system to ensure it meets the needs of the user. I have used systems engineering practices in rocketry and vertical farming. However, the way these practices are used in industry are very slow and broken, but there is an interesting case in using systems engineering in the context of business development <a href="https://marketcreatorslab.com/ive/" target="_blank" class="text-blue-600 hover:text-blue-800 underline">here</a>.`,
+      },
+      {
+        title: 'Systems Thinking',
+        description:
+          `<a href="https://en.wikipedia.org/wiki/Systems_thinking" target="_blank" class="text-blue-600 hover:text-blue-800 underline">Systems thinking</a> is another intrerdisciplinary field that has its origins in control systems. Systems thinking is an excellent way to map and understand problems in a holistic way, and can be applied to almost any domain. Systems thinking enables conversations to be held at a higher level of abstraction, and allows you to find ways to solve problems at their root cause.`,
+      },
+      {
+        title: 'Control Systems',
+        description:
+          `The field of control engineering essentially ensures that systems behave as intended. The brains of many autonomous systems are <a
         href="https://www.youtube.com/watch?v=lBC1nEq0_nk"
         target="_blank"
         class="text-blue-600 hover:text-blue-800 underline">control systems</a
@@ -88,27 +103,17 @@ const metadata = {
         href="https://en.wikipedia.org/wiki/Model_Predictive_Control"
         target="_blank"
         class="text-blue-600 hover:text-blue-800 underline">model predictive control</a
-      >.`
-    items={[
-      {
-        title: 'Systems Thinking and Engineering',
-        description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.', //TODO:
-      },
-      {
-        title: 'Control Systems',
-        description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.', //TODO:
+      >. I work with control systems in the renewable energy sector, but have experience with developing controls in vertical farming, medical devices and aerospace.`,
       },
       {
         title: 'Software Engineering',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          `I have developed <a href="https://en.wikipedia.org/wiki/Complex_system" target="_blank" class="text-blue-600 hover:text-blue-800 underline">complex systems</a> simulations using agent-based models to simulate complex behaviours in the public health domain, simulating the <a href="https://www.drinkaware.co.uk/research/research-and-evaluation-reports/understanding-the-alcohol-harm-paradox" target="_blank" class="text-blue-600 hover:text-blue-800 underline">alcohol harm paradox</a>.`,
       },
       {
         title: 'Electronics & Embedded Systems',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'I have built custom electronics spanning lighting systems that reacted to music to embedded avionics for rockets and custom networked sensor systems for home automation.',
       },
     ]}
     image={{
@@ -119,39 +124,16 @@ const metadata = {
       },
     }}
   >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Systems and Control</h3>
-      Underneath many autonomous systems are <a
-        href="https://www.youtube.com/watch?v=lBC1nEq0_nk"
-        target="_blank"
-        class="text-blue-600 hover:text-blue-800 underline">control systems</a
-      >. What may seem to many as 'AI' are actually control systems. Your body maintaining a temperature of 37 degrees
-      Celsius is a <a
-        href="https://med.libretexts.org/Bookshelves/Anatomy_and_Physiology/Human_Anatomy_and_Physiology_Preparatory_Course_(Liachovitzky)/01%3A_Levels_of_Organization_of_the_Human_Organism/1.03%3A_Homeostasis_and_Control_Systems"
-        target="_blank"
-        class="text-blue-600 hover:text-blue-800 underline">control system</a
-      >. SpaceX lands its rockets using control engineering, solving <a
-        href="https://www.youtube.com/watch?v=Kk5J-wOYOFM"
-        target="_blank"
-        class="text-blue-600 hover:text-blue-800 underline">optimal control</a
-      > problems throughout the landing process via <a
-        href="https://en.wikipedia.org/wiki/Model_Predictive_Control"
-        target="_blank"
-        class="text-blue-600 hover:text-blue-800 underline">model predictive control</a
-      >.
-    </Fragment>
-
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
   <Stats
-    title="Discover the impressive impact of Astrowind"
-    subtitle="The numbers below reflect the trust our users have placed in us and the remarkable outcomes we've helped them achieve."
+    title="My Numbers"
     stats={[
-      { title: 'Downloads', amount: '182K' },
-      { title: 'Websites Launched', amount: '87' },
+      { title: 'Years of Experience', amount: '2' },
+      { title: 'Domains worked in', amount: '5' },
       { title: 'User Ratings', amount: '4.8' },
       { title: 'Satisfied Clients', amount: '116K' },
     ]}
@@ -161,28 +143,28 @@ const metadata = {
 
   <Content
     title="Projects & Ideas"
-    subtitle="I have worked on a variety of projects, here are some recent ones which I believe have business potential"
+    subtitle="I have worked on a variety of projects and ideas, here are some recent ones which I believe have business potential"
     isAfterContent
     items={[
       {
         title: 'Smart shipping containers',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+          "The maritime industry is expected to grow by <a href='https://www.marketresearchfuture.com/reports/maritime-market-41641' target='_blank' class='text-blue-600 hover:text-blue-800 underline'>~$700bn by 2035</a>. It is a sector that is often not considered, yet touches the lives of all of us - through trade and logistics. Not only is it a sector that is expected to grow, but it is also a sector that is ripe for disruption, with lots of legacy systems still in place. My vision is to capture data on each container, including what it is carrying and where is it going - data fundamental not only to the maritime sector but the economy more generally. Maybe you've heard of <a href='https://www.ibm.com/think/topics/industry-4-0/' target='_blank' class='text-blue-600 hover:text-blue-800 underline'>industry 4.0</a>, this is the road to 'Economy 4.0'.",
       },
       {
         title: 'Supply chain resilience through distributed manufacturing',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        description: `COVID and the war in Ukraine are both crises that demonstrated that our supply chains lack resilience. What naturally emerged in both crises is a shift towards distributed manufacturing - 3D printed ventilator valves or locally manufactured drone components are two examples. With governments and MoD's prioritising resilience and defence, connecting 'ready-to-go' micro-manufacturers with defence primes and the MoD could be a business opportunity.`,
       },
       {
         title: 'Fully autonomous drone swarms',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'The war in Ukraine has highlighted the cost advantage of using cheap drones to deliver firepower. Whilst the cost of one 155 Howitzer shell ranges from $2000 - $10,000, the cost of a cheap FPV drone is around $500. The future of warfare will be defined not only by the cost of weapons, but also the algorithms driving them. And, if drones can autonomously act in the same way that swarms of hornets to protect their nest, there is a huge tactical advantage. Currently, Ukraine is operating on a one-to-one drone-to-pilot ratio, which is not scalable. Combining modern AI with swarm control systems is a very viable option not only for the future of warfare. Networked swarm control systems could control fleets of autonomous vehicles to act as holistic transportation systems. The software layer of swarm control systems can be generalised to many domains, including transportation to logistics.',
       },
       
       {
         title: 'Offgrid energy system matchmaking',
         description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+          'European law states that EU countries must limit nitrogen emissions, and diesel generators emit a lot of nitrogen. The construction sector is a majour contributor of nitrogen emissions due to their use of diesel generators. Hence this legislation is already a blocker to construction in the Netherlands, which is experiencing a housing crisis. Other EU states are also bound to these laws, and are facing housing crises, such as Spain. There are already companies that can provide nitrogen-free energy, by means of hydrogen generators or large batteries, hence matching them with offgrid energy system providers could be a business opportunity.',
       },
     ]}
     image={{
