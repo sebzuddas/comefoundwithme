@@ -52,22 +52,11 @@ export const headerData = {
       text: 'Get in touch',
       links: [
         {
-          text: 'Email',
-          href: 'mailto:sebastianozuddas1@gmail.com',
-          icon: 'tabler:mail'
-        },
-        {
           text: 'WhatsApp',
           href: 'https://wa.me/+447598064088',
           icon: 'tabler:brand-whatsapp',
           target: '_blank'
         },
-        {
-          text: 'Calendly',
-          href: 'https://calendly.com/sebastianozuddas1/30min',
-          icon: 'tabler:form-input',
-          target: '_blank'
-        }
       ]
     }
   ],
