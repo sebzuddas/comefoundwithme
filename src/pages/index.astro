@@ -130,12 +130,14 @@ const metadata = {
   </Content>
 
   <Stats
-    title="My Numbers"
+    title="My Big 5 Personality Score"
+    subtitle='Every year I score myself on the Big 5 personality test. It is important to be honest and clear in finding a co-founder, and I will be curious to know yours also.'
     stats={[
-      { title: 'Years of Experience', amount: '2' },
-      { title: 'Domains worked in', amount: '5' },
-      { title: 'User Ratings', amount: '4.8' },
-      { title: 'Satisfied Clients', amount: '116K' },
+      { title: 'Openness', amount: '70%' },
+      { title: 'Conscientiousness', amount: '80%' },
+      { title: 'Extraversion', amount: '60%' },
+      { title: 'Agreeableness', amount: '65%' },
+      { title: 'Neuroticism', amount: '20%'}
     ]}
   />
 
@@ -185,25 +187,36 @@ const metadata = {
     title="What I'm looking for in a co-founder"
     subtitle="I'm looking for a co-founder to help me build a company"
     items={[
-      {
-        title: 'Enhanced user engagement',
-        description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
-      },
-      {
-        title: 'Continuous improvement',
-        description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
-      },
-      {
-        title: 'Time and resource efficiency',
-        description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
-      },
-      {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
-      },
+    {
+      title: 'Agency',
+      description:
+        'Self-starting, proactive, and comfortable with ambiguity. Able to take initiative without waiting for permission.',
+    },
+    {
+      title: 'Risk Taking Capacity & Boldness',
+      description:
+        'Willing to act decisively under uncertainty. You must be willing to be bold - it often yields the best results.',
+    },
+    {
+      title: 'Honesty and Integrity',
+      description:
+        'Open to giving and receiving direct feedback. Strong interpersonal skills matter - companies are made of people.',
+    },
+    {
+      title: 'Resilience',
+      description:
+        'Entrepreneurship is hard. I value people who maintain their energy and clarity — whether through reflection, routine, or recovery. Maybe we can even exercise together?',
+    },
+    {
+      title: 'Complementary Strengths',
+      description:
+        'You bring skills I don’t — ideally with strong commercial instincts, product sense, or market insight.',
+    },
+    {
+      title: 'Curiosity and Learning',
+      description:
+        'Able to ask “obvious” questions, learn fast, and adapt. Driven by understanding, not ego.',
+    },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
@@ -225,29 +238,28 @@ const metadata = {
       {
         title: 'What got you into systems?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          `I was first drawn to systems through the work of Buckminster Fuller, who said, “We need to think about problems systemically, and resolve them as such.” His approach blended mathematics, physical principles, and design in a way that emphasised direct experience.
+          I chose to study systems and control because it's one of the most generalisable disciplines: it helps explain how and why a system behaves, and provides tools to influence it. What captivates me most is the concept of feedback. Whether it's a thermostat resisting temperature swings, your reflexes withdrawing from heat, or a startup adjusting to hard truths — robust systems respond to feedback.
+          `,
       },
       {
         title: 'Where are you from, really?',
-        description: `I was born in Northern Italy, near <a href="https://maps.app.goo.gl/D1pudcwur1RerLcy8" target="_blank" class="text-blue-600 hover:text-blue-800 underline">Lake Maggiore</a> and lived there until I was 7, when I moved to the UK with my mum. My mum is English and my dad is Italian, so I have two mother tongues (English and Italian). But even though I was born in the North of Italy, my heritage is Sardinian (Zuddas is a Sardinian surname) and I would go to Sardinia every summer.`,
+        description: `I was born in Northern Italy, near <a href="https://maps.app.goo.gl/D1pudcwur1RerLcy8" target="_blank" class="text-blue-600 hover:text-blue-800 underline">Lake Maggiore</a> and lived there until I was 7, when I moved to the UK with my mum. My mum is English and my dad is Italian, so I have two mother tongues (English and Italian). 
+        But even though I was born in the North of Italy, my heritage is Sardinian (Zuddas is a Sardinian surname) and I would go to Sardinia every summer. 
+        However, I spent most of my life in the UK and lived, worked and studied in Brighton, London and Sheffield. All of this aside, I currently live in the Netherlands.`,
       },
       {
-        title: 'Why Entrepreneurship?',
-        description: 'When I was 18, I had dropped out of college twice',
+        title: 'Why entrepreneurship?',
+        description: `Having had little guidance in my life, I've learnt to make bold decisions and work things out as I go. 
+        I am interested in Entrepreneurship and especially EF because of the emphasis on solving globally relevant problems, now. Over time, I’ve become increasingly frustrated with the narrow scope of problems in traditional roles.
+        The benefit of entrepreneurship is that you get to choose whicih problems to solve, and EF provides driven people and the conditions to take a moonshot. For me, it’s an obvious next step. It is the room I’ve been searching for, where drive and intensity are the norm. Now, I’m ready to build systems that touch the lives of billions.`
       },
       {
         title: 'What do you do in your spare time?',
-        description: 'I like to go to the gym, play video games, and watch movies.',
-      },
-      {
-        title: 'What is something that you would like to try again?',
-        description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-      },
-      {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
-        description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+        description: `Exercise is very important to me especially in the mornings. 
+        I enjoy listening to history and personal development podcasts. 
+        I co-lead a community of engineers from the Royal Academy of Engineering, which I find very rewarding. 
+        Other than that, I don't have much spare time because I'm always building something.`,
       },
     ]}
   />
@@ -258,20 +270,12 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
+        text: 'Get in touch',
         href: 'https://github.com/onwidget/astrowind',
         target: '_blank',
         icon: 'tabler:download',
       },
     ]}
   >
-    <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
-    </Fragment>
   </CallToAction>
 </Layout>
